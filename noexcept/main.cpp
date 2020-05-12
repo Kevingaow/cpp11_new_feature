@@ -14,12 +14,13 @@ struct C {
     B b;
 };
 
-int funA() {A a;}
-int funB() {B b;}
-int funC() {C c;}
+void funA() {A a;}
+void funB() {B b;}
+void funC() {C c;}
 
 int main() {
     try {
+        new int(0);
         funB();
     } catch(...) {
         cout << "catch funB" << endl;
